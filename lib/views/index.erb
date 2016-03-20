@@ -1,0 +1,25 @@
+
+
+
+<ul>
+  <% listings.each do |x| %>
+  <!-- x is a hash
+
+  <li><%= x %></li>
+-->
+
+    <h1><%= x["title"] %></h1>
+
+
+    <li><%= x["Shop"]["title"] %></li>
+    <li>
+      <img src="<%= x["Images"][0]["url_75x75"] %>"/>
+    </li>
+
+    <!--
+    shop_hash = x["Shop"]
+    shop_hash["title"]
+   -->
+
+  <% end %>
+</ul>

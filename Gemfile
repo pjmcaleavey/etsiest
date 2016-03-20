@@ -8,3 +8,4 @@ group :development do#why
 end
 gem "sinatra"
 gem "pry"
+gem "etsy"
