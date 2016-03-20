@@ -1,25 +1,91 @@
+<!DOCTYPE html>
+<html>
 
 
+  <link rel="stylesheet" href="style.css">
 
-<ul>
-  <% listings.each do |x| %>
+
+<head>
+  <div class="header">
+  <img src="http://siliconangle.com/files/2012/08/etsy-logo.png" height="60"/>
+
+  <form>
+    <input type="text" placeholder="Search..." required>
+    <input type="button" value="Search">
+  </form>
+  </div>
+</head>
+
+<nav>
+  <div class="navigation">
+  <ul>
+    <li>Clothing & Accessories</li>
+    <li> Jewelry</li>
+    <li>Craft Supplies & Tools</li>
+    <li>Weddings</li>
+    <li>Entertainment</li>
+    <li>Home & Living</li>
+    <li>Kids & Baby</li>
+    <li>Vintage</li>
+  </ul>
+  </div>
+</nav>
+
+
+  <div class=sidebar>
+    <h5>All categories</h5>
+    <ul>
+      <li>Jewelry</li>
+      <li>Home & Living</li>
+      <li>Art & Collectibles</li>
+      <li>Bath & Beauty</li>
+      <li>Clothing</li>
+      <li>Craft Supplies & Tools</li>
+      <li>Paper & Party Supplies</li>
+      <li>Weddings</li>
+      <li>Accessories</li>
+      <li>Bags & Purses</li>
+      <li>Books, Movies & Music</li>
+      <li>Electronics & Accessories</li>
+      <li>Shoes</li>
+      <li>Toys & Games</li>
+      <li>Pet Supplies</li>
+    </ul>
+  </div>
+
+
+  <div class="grid">
+    <ul>
+      <% listings.each do |x| %>
   <!-- x is a hash
 
   <li><%= x %></li>
 -->
 
-    <h1><%= x["title"] %></h1>
 
 
-    <li><%= x["Shop"]["title"] %></li>
+
+
     <li>
-      <img src="<%= x["Images"][0]["url_75x75"] %>"/>
-    </li>
+      <img src="<%= x["Images"][0]["url_75x75"] %>" height="200"/>
+      </li>
+      <li><%= x["title"] %><li>
+      <li><%= x["Shop"]["shop_name"] %></li>
+      <li><%= x["price"] %></li>
+
 
     <!--
     shop_hash = x["Shop"]
     shop_hash["title"]
    -->
 
-  <% end %>
-</ul>
+   <% end %>
+  </ul>
+  </div>
+
+
+
+
+
+
+</html>

@@ -13,8 +13,8 @@ module Etsiest
     get "/dog/:dog_name" do#/route/:variable_name
       # "This is your dogs name: #{params["dog_name"]}"
       erb :dog, locals: {dog_name: params["dog_name"]}
-      # Render the file dog.erb, I want dog_name to equal the value of params["dog_name"] dog_name is now available to use
-      # in dog.erb
+      # Render the file dog.erb, I want dog_name to equal the value of params["dog_name"] dog_name
+      #is now available to use in dog.erb
 
 
       #  <%= %>
