@@ -7,6 +7,7 @@ head img{
 
 head form {
   display: inline-block;
+  float: left;
 }
 
 
@@ -42,6 +43,7 @@ nav ul li {
 
 /*Sidebar*/
 .sidebar {
+  float: left;
   display: inline-block;
   border-style: solid;
   border-width: 1px;
@@ -68,10 +70,47 @@ nav ul li {
 
 /*Grid*/
 .grid {
-  width: 65%;
   float: right;
+  max-width: 1000px;
+
+  /*display: inline-block;*/
+}
+
+.grid_contents {
+  float: right;
+  width: 200px;
+  margin: 10px;
 }
 
 .grid li {
   list-style-type: none;
+  /*display: inline;
+  float: left*/
+}
+
+/*div.grid li img {
+  float: left;
+}*/
+
+div.grid_pic {
+  /*float: right;*/
+}
+
+div.grid_title {
+  width: 200px;
+  overflow: hidden;
+  /*float: left;*/
+}
+
+div.grid_title {
+  /*display: inline;*/
+  /*position: relative;*/
+  /*display: inline-block;*/
+  /*overflow:hidden;*/
+  width: 200px;
+}
+
+div.grid_shop_price {
+  width: 200px;
+  /*float: left;*/
 }

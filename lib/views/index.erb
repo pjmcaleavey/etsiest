@@ -64,16 +64,20 @@
 
 
 
-
-
-    <li>
-      <img src="<%= x["Images"][0]["url_75x75"] %>" height="200"/>
-      </li>
-      <li><%= x["title"] %><li>
-      <li><%= x["Shop"]["shop_name"] %></li>
-      <li><%= x["price"] %></li>
-
-
+    <div class="grid_contents">
+      <div class="grid_pic">
+        <li>
+          <img src="<%= x["Images"][0]["url_75x75"] %>" height="200"/>
+        </li>
+        </div>
+          <div class="grid_title">
+            <li><%= x["title"] %><li>
+          </div>
+          <div class="grid_shop_price">
+            <li><%= x["Shop"]["shop_name"] %></li>
+            <li><%= x["price"] %></li>
+        </div>
+      </div>
     <!--
     shop_hash = x["Shop"]
     shop_hash["title"]
